@@ -1,0 +1,27 @@
+/* DA de Studio (DESIGN.md) : noir profond, texte blanc sobre, le violet #AE52FF réservé aux liens (agir). */
+:root {
+  --bg: #09090C;
+  --surface: #111116;
+  --texte: rgba(255, 255, 255, .90);
+  --texte-doux: rgba(255, 255, 255, .62);
+  --accent: #AE52FF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--texte);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 640px; margin: 0 auto; padding: 64px 16px 48px; }
+.marque { margin: 0 0 40px; font-weight: 700; letter-spacing: .02em; }
+.marque a { color: var(--texte); text-decoration: none; }
+h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.2; }
+h2 { margin: 40px 0 8px; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+.chapo { margin: 0 0 32px; color: var(--texte-doux); }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+a { color: var(--accent); }
+code { font-size: 14px; background: var(--surface); padding: 1px 5px; border-radius: 4px; }
+.liens { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 32px; }
+footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, .08); color: var(--texte-doux); font-size: 14px; }
